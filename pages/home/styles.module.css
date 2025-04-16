@@ -1,0 +1,25 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.mainHome {
+    /* min-height: calc(100vh - 112px); */
+    flex-grow: 1;
+    background-color: #575757;
+}
+
+.notCadMangas {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    padding: 60px;
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: bold;
+    color: aquamarine;
+}

@@ -1,0 +1,272 @@
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    background: linear-gradient(135deg,
+    rgb(18, 88, 88) 50%,
+    #244244 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: pink;
+    background-color: #d4d4d4;
+    background-color: #ccc; */
+    
+    & .boxForm {
+        min-width: 200px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 2px rgba(47, 47, 47, .15);
+        background-color: #ccc;
+        
+        & form {
+            width: 100%;
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: #34666a80;
+            
+            & .headerForm {
+                padding: 20px;
+                background-color: #053033;
+                display: flex;
+                align-items: center;
+                position: relative;
+                justify-content: space-between;
+
+                & span:nth-child(1) {
+                    font-weight: bold;
+                    text-transform: capitalize;
+                    color: #e4ffe8;
+                }
+
+                & span:nth-child(2) {
+                    width: 35px;
+                    height: 35px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 3px;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    background-color: #fff;
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    transition: all 250ms ease-in-out;
+
+                    &:hover {
+                        background-color: red;
+                    }
+                }
+
+                & span:nth-child(2)::after {
+                    content: "x";
+                    position: absolute;
+                    top: -2px;
+                    color: #244;
+                }
+            }
+        }
+    }
+}
+
+.mainForm {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    & label {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        font-size: .75rem;
+
+        & select {
+            padding: 10px;
+            border-radius: 4px;
+            outline: none;
+            border: 0;
+            text-transform: capitalize;
+        }
+    }
+}
+
+.lbl_titulo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1px !important;
+    font-size: .75rem;
+    color: #242424;
+    color: #fff;
+}
+
+.lbl {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    display: flex !important;
+    gap: 1px !important;
+    margin-top: 10px;
+}
+
+& .lbl input {
+    padding: 10px;
+    border-radius: 4px;
+    outline: none;
+    border: 0;
+    color: #242424;
+}
+
+.footerForm {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & button {
+        border: 0;
+        width: 100%;
+        padding: 20px;
+        border-radius: 5px;
+        font-weight: 600;
+        cursor: pointer;
+        background-color: #86eff6;
+        transition: all 250ms ease-in-out;
+    }
+}
+
+.btnDesactive {
+    cursor: not-allowed !important;
+    background-color: #24424450 !important;
+    color: #86eff660;
+    pointer-events: none;
+}
+.btnActive {
+    background-color: #244244 !important;
+    color: #86eff6;
+
+    &:hover {
+        opacity: .9;
+    }
+}
+
+.cadCategoria {
+    width: 41px;
+    /* width: 300px; */
+    /* max-width: 500px; */
+    position: absolute;
+    right: 0;
+    /* padding: 10px; */
+    background-color: #244244;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 1px 2px 4px 1px;
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+
+    & span {
+        writing-mode: sideways-lr;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        text-orientation: mixed;
+        display: flex;
+        white-space: nowrap;
+        padding: 10px;
+        font-size: .9rem;
+        border-bottom: 1px solid #86eff6;
+        cursor: pointer;
+        transition: all 250ms ease-in-out;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 500;
+        background-color: #86eff6;
+        color: #0b2123;
+
+        &:hover {
+            background-color: #86eff6;
+            color: #0b2123;
+            opacity: .9;
+        }
+    }
+
+    & article {
+        margin-right: 20px;
+        margin-bottom: 10px;
+        /* padding: 0px 10px; */
+        display: flex;
+        flex-direction: column;
+        /* gap: 10px; */
+        /* background-color: antiquewhite; */
+
+        & label {
+            font-size: .75rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            padding: 10px 0;
+            border-bottom: 1px solid #7dd9e0;
+
+            background-color: #244244;
+
+            & input {
+                padding: 10px;
+                border: 0;
+                border-radius: 2px;
+                font-size: .75rem;
+            }
+
+        }
+
+        & table {
+            margin-top: 10px;
+            padding: 10px 0;
+            font-size: .75rem;
+            text-transform: capitalize;
+            border-collapse: collapse;
+            border-radius: 5px;
+            overflow: hidden;
+
+            & thead {
+                background-color: #0b2123;
+
+                & th {
+                    padding: 5px 10px;
+                }
+            }
+
+            & tbody tr td {
+                padding: 5px 10px;
+                cursor: pointer;
+            }
+
+            & tbody tr {
+                background-color: #3b8085;
+                border-bottom: 1px solid #0b2123;
+            }
+
+            & tbody tr:hover {
+                background-color: #0b2123;
+            }
+        }
+    }
+}
+
+.txtarea {
+    border: 0;
+    resize: none;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+}

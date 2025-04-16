@@ -1,0 +1,152 @@
+.containerFavoritos {
+    width: 100%;
+    /* min-height: 100vh; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #383838;
+    /* overflow-x: hidden; */
+
+    & .boxFavoritos {
+        width: 100%;
+        min-height: calc(100vh - 65px - 50px);
+        /* min-height: auto; */
+        max-width: 1400px;
+        /* height: 100%; */
+        /* flex: 1; */
+        /* flex-grow: 1; */
+        padding: 20px;
+        /* background-color: aquamarine; */
+
+        & .headerFavoritos {
+            width: 100%;
+            padding: 10px;
+            color: #383838;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: yellowgreen;
+            border-radius: 4px;
+            font-weight: bold;
+            box-shadow: 1px 2px 4px rgba(153, 205, 50, 0.372);
+
+            & p {
+                font-size: .75rem;
+                opacity: .75;
+                font-weight: normal;
+            }
+        }
+
+        & .mainFavoritos {
+            width: 100%;
+            /* height: 100%; */
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+.compContainer {
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardFavoritos {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 3px solid #141414;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 1px 2px 4px yellowgreen;
+
+    &:hover {
+        border: 5px solid yellowgreen;
+    }
+
+    & .img {
+        width: 100%;
+        height: 200px;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+
+
+    & b {
+        width: 100%;
+        padding: 10px;
+        font-size: .75rem;
+        background-color: rgb(22, 147, 106);
+        color: rgb(170, 237, 215);
+    }
+
+    &>p {
+        font-size: .6rem;
+        padding: 5px 10px;
+        color: #cccccc82;
+
+        &>b {
+            font-size: .7rem;
+            background-color: initial;
+            color: #ccc;
+        }
+    }
+
+    & span {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 10px;
+        gap: 2px;
+        margin-bottom: 5px;
+
+        & .txtCap {
+            font-size: .7rem;
+            color: yellowgreen;
+            /* background-color: aliceblue; */
+
+            & b {
+                background-color: initial;
+                color: #ccc;
+                padding: initial !important;
+            }
+        }
+    }
+
+}
+
+.icoFavorito {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #ccc;
+}
+
+.semManga {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    color: #ccc;
+    align-items: center;
+    justify-content: center;
+}
+
+.favoritado {
+    color: red !important;
+    fill: red !important;
+  }

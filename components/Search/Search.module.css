@@ -1,0 +1,307 @@
+.containerSearch {
+    width: calc(100vw - 0px);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.componentSearch_container {
+    width: 100%;
+    height: auto;
+    /* padding: 0 30px 20px 20px; */ /* se ficar estranho o espaçamento do box search descomentar */
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.componentSearch {
+    width: calc(100% - 4px);
+    max-width: 1200px;
+    height: auto;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #242424;
+    border: 2px solid aquamarine;
+    border-top: 0;
+    box-shadow: 0px 2px 4px aquamarine;
+    
+    transform: translateY(-150%);
+    /* animation: anim 1s ease-in-out forwards; */
+    animation: anim .5s ease-in-out forwards;
+    z-index: -1;
+    pointer-events: none; /* Bloqueia interações até a animação terminar */
+    
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 10px;
+}
+
+.componentSearch.closing {
+    animation: animClose 0.5s ease-in-out forwards;
+}
+
+@keyframes anim {
+    0% {
+        transform: translateY(-150%);
+        z-index: -1;
+        pointer-events: none;
+    }
+    99% {
+        transform: translateY(0%);
+        z-index: -1;
+        pointer-events: none;
+    }
+    100% {
+        transform: translateY(0%);
+        z-index: 1000; /* Permite interações após a animação */
+        pointer-events: auto;
+    }
+}
+
+/* Animação de fechamento */
+@keyframes animClose {
+    0% {
+        transform: translateY(0%);
+        z-index: 1000;
+        pointer-events: auto;
+    }
+    99% {
+        transform: translateY(-150%);
+        z-index: -1;
+        pointer-events: none;
+    }
+    100% {
+        transform: translateY(-150%);
+        z-index: -1;
+        pointer-events: none;
+    }
+}
+
+/* Classe para fechamento */
+.closing {
+    animation: animClose 0.5s ease-in-out forwards;
+}
+
+.boxSearch {
+    width: 100%;
+    /* padding: 10px 20px; */
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(127, 255, 212);
+    padding: 10px;
+    border-radius: 4px;
+    color: aquamarine;
+}
+
+.boxOne {
+    min-width: auto;
+    /* padding-inline: 10px; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 10px; */
+    border-radius: 4px;
+    background-color: rgba(127, 255, 212, 0.46);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    margin-right: 50px;
+    
+    & .boxIcoSearch_ {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #4D8874;
+        
+        & .icoBuscador {
+            width: 35px;
+            height: 35px;
+        }
+    }
+    
+    & input {
+        height: 80%;
+        width: 400px; /* 400px */
+        border: 0;
+        padding: 10px;
+        margin-right: 10px;
+        background-color: rgb(127, 255, 212);
+        border-radius: 4px;
+        color: rgb(2, 45, 31);
+        font-size: 1.25rem;
+        outline: none;
+
+        &::placeholder {
+            color: rgb(12, 118, 83);
+        }
+    }
+
+}
+
+.boxTwo {
+    height: auto;
+    width: auto;
+    padding: 10px;
+    background-color: rgba(127, 255, 212, 0.46);
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    & select {
+        padding: 10px;
+        border-radius: 4px;
+        border: 0;
+        color: #4D8874;
+        font-weight: 600;
+        outline: none;
+        text-transform: capitalize;
+
+        & > option {
+            color: #4D8874;
+        }
+    }
+}
+
+.separatorVertical {
+    width: 1px;
+    height: 100%;
+    background-color: rgba(127, 255, 212, 0.46);
+}
+
+.separator {
+    width: 100%;
+    height: 1px;
+    margin-top: 10px;
+    background-color: rgba(204, 204, 204, 0.25);
+}
+
+/* cards das pesquisas */
+
+.resultado {
+    width: 100%;
+    max-height: calc(100vh - 380px);
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+    overflow: auto;
+    /* background-color: #4d8874; */
+}
+
+.card_search {
+    width: 175px;
+    height: 250px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #4d887400;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+    overflow: hidden;
+    
+    &:hover {
+        background-color: #4d8874;
+    }
+}
+
+.boxIMG_search {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+
+    & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    & span {
+        width: 100%;
+        height: 60px;
+        padding: 10px;
+        /* z-index: 1; */
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #24242480;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+#portal-root {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ajuste o z-index conforme necessário */
+}
+
+
+
+@media screen and (max-width: 850px) {
+    .boxTwo {
+        /* width: 200px; */
+        height: 62px;
+    }
+    .boxOne {
+        height: 62px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .boxSearch {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .boxOne {
+        width: 100%;
+        margin: 0;
+
+        & input {
+            width: 100%;
+        }
+    }
+
+    .boxTwo {
+        width: fit-content;
+
+        & select {
+            padding-inline: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .boxSearch {
+        gap: 0;
+        row-gap: 10px;
+    }
+}
+

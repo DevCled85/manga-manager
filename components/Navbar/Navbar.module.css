@@ -1,0 +1,120 @@
+header.header {
+    width: 100%;
+    /* height: fit-content; */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #242424;
+    color: #ccc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    & .logoTxt {
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 250ms ease-in-out;
+        /* border: 2px solid #fff; */
+        padding: 10px;
+        border-radius: 4px;
+        background-color: #fff;
+        color: #242424;
+        text-align: center;
+        box-shadow: inset -2px 2px 16px aquamarine;
+
+        &:hover {
+            color: #242424;
+            transform: scale(1.1);
+        }
+    }
+
+    &>div {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.btnOpt {
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+
+    &:hover {
+        color: aquamarine;
+        transform: scale(1.2);
+    }
+}
+
+.userRoot {
+    padding: 5px 10px;
+    border-radius: 5px 5px 0 0;
+    background-color: aquamarine;
+    color: #242424;
+    font-size: .7rem;
+    position: relative;
+    bottom: 7.5px;
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    border: 0;
+
+    &::before {
+        content: 'SAIR';
+        position: absolute;
+        width: calc(100% + .5px);
+        left: 0;
+        right: 0;
+        bottom: -15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* width: 50px; */
+        background-color: red;
+        color: #fff;
+        font-size: .7rem;
+        border: 0;
+        /* padding: 0px 10px; */
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}
+
+.favorite {
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+
+    &:hover {
+        color: aquamarine;
+        transform: scale(1.2);
+    }
+}
+
+.icoSearch {
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+
+    &:hover {
+        transform: scale(1.2);
+        color: aquamarine;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .logoTxt {
+        width: auto !important;
+        padding: 12px 5px !important;
+        font-size: .75rem !important;
+    }
+
+    .userRoot {
+        font-size: .6rem;
+        padding: 4px 10px;
+        height: auto;
+        width: auto;
+    }
+}
