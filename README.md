@@ -9,10 +9,19 @@
 
 ## Sistema completo para gerenciamento de coleções de mangás com interface web moderna e instalação desktop para Windows.
 
+## Home
 ![Home](public/screenshot/screen-grid.png) <!-- Adicione uma screenshot real -->
+
+## Cadastro
 ![Cadastro](public/screenshot/screen-grid-register.png) <!-- Adicione uma screenshot real -->
+
+## Search
 ![Search](public/screenshot/screen-grid-search.png) <!-- Adicione uma screenshot real -->
+
+## Favoritos
 ![Favoritos](public/screenshot/screen-grid-favorites.png) <!-- Adicione uma screenshot real -->
+
+## Usuário root
 ![Usuário root](public/screenshot/screen-grid-user.png) <!-- Adicione uma screenshot real -->
 
 ## ✨ Funcionalidades Principais
