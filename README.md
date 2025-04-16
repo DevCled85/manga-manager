@@ -7,9 +7,13 @@
 
 ## 📸 Screenshots (Atualize com suas imagens)
 
-# Sistema completo para gerenciamento de coleções de mangás com interface web moderna e instalação desktop para Windows.
+## Sistema completo para gerenciamento de coleções de mangás com interface web moderna e instalação desktop para Windows.
 
-![Screenshot da Interface](public/screenshot-demo.png) <!-- Adicione uma screenshot real -->
+![Home](public/screenshot/screen-grid.png) <!-- Adicione uma screenshot real -->
+![Cadastro](public/screenshot/screen-grid-register.png) <!-- Adicione uma screenshot real -->
+![Search](public/screenshot/screen-grid-search.png) <!-- Adicione uma screenshot real -->
+![Favoritos](public/screenshot/screen-grid-favorites.png) <!-- Adicione uma screenshot real -->
+![Usuário root](public/screenshot/screen-grid-user.png) <!-- Adicione uma screenshot real -->
 
 ## ✨ Funcionalidades Principais
 - **CRUD Completo** (Criar, Ler, Atualizar, Deletar)
@@ -41,7 +45,7 @@
 ### Instalação Local
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/manga-manager.git
+git clone https://github.com/DevCled85/manga-manager
 
 ## 🛠️ Desenvolvimento
 Comandos Úteis
@@ -52,13 +56,6 @@ npm install
 # Inicie o servidor de desenvolvimento
 npm run dev
 
-Instalação via Windows
-Execute o setup_manga_manager.exe
-
-Siga as instruções do instalador
-
-O programa estará disponível no Menu Iniciar e Desktop
-
 ## 📂 Estrutura do Projeto
 manga-manager/
 ├── src/
@@ -68,7 +65,6 @@ manga-manager/
 │   │   ├── api/          # Endpoints da API
 │   │   └── ...           # Páginas principais
 ├── public/               # Assets estáticos
-├── install/              # Configurações de instalação
 └── ...                   # Outros arquivos de configuração
 
 ## 🔍 Destaques Técnicos
