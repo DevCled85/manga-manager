@@ -31,7 +31,6 @@
 - **Busca Avançada**
 - **Estatísticas de Leitura**
 - **Interface Responsiva**
-- **Instalador Windows (.exe)**
 
 ## 🛠️ Tecnologias Utilizadas
 - **Frontend**: 
@@ -41,9 +40,6 @@
 - **Backend**:
   - API Routes (Next.js)
   - SQLite + sqlite3
-- **DevOps**:
-  - Inno Setup (Instalador Windows)
-  - Auto-start do servidor
 
 ## 🚀 Como Executar
 
@@ -105,8 +101,6 @@ CREATE TABLE mangas (
 
 Configuração Avançada
 Edite next.config.mjs para customizar o Next.js
-
-Modifique setup_manga_manager.iss para ajustar o instalador
 
 ## 🤝 Contribuição
 Faça um Fork do projeto
