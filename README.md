@@ -5,23 +5,23 @@
 [![SQLite](https://img.shields.io/badge/SQLite-3.45.1-green?logo=sqlite)](https://sqlite.org/)
 [![License](https://img.shields.io/badge/License-MIT-red)](LICENSE)
 
+## Sistema completo para gerenciamento de coleções de mangás com interface web.
+
 ## 📸 Screenshots (Atualize com suas imagens)
 
-## Sistema completo para gerenciamento de coleções de mangás com interface web moderna e instalação desktop para Windows.
-
-## Home
+# Home
 ![Home](public/screenshot/screen-grid.png) <!-- Adicione uma screenshot real -->
 
-## Cadastro
+# Cadastro
 ![Cadastro](public/screenshot/screen-grid-register.png) <!-- Adicione uma screenshot real -->
 
-## Search
+# Search
 ![Search](public/screenshot/screen-grid-search.png) <!-- Adicione uma screenshot real -->
 
-## Favoritos
+# Favoritos
 ![Favoritos](public/screenshot/screen-grid-favorites.png) <!-- Adicione uma screenshot real -->
 
-## Usuário root
+# Usuário root
 ![Usuário root](public/screenshot/screen-grid-user.png) <!-- Adicione uma screenshot real -->
 
 ## ✨ Funcionalidades Principais
